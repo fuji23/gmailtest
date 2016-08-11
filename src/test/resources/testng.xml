@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite send mail" verbose="1" >
+
+    <test name="Send mail" >
+        <classes>
+            <class name="com.gmail.tests.sendemail.SendMail" />
+        </classes>
+    </test>
+</suite>
