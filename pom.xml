@@ -11,7 +11,7 @@
     <properties>
         <browser></browser>
         <locale></locale>
-        <chromedriver.path>src\test\resources\chromedriver.exe</chromedriver.path>
+        <chromedriver.path></chromedriver.path>
     </properties>
 
     <dependencies>
@@ -38,6 +38,12 @@
             <id>linux</id>
             <properties>
                 <browser>src/test/resources/chromedriver</browser>
+            </properties>
+        </profile>
+        <profile>
+            <id>win</id>
+            <properties>
+                <browser>src\test\resources\chromedriver.exe</browser>
             </properties>
         </profile>
     </profiles>
