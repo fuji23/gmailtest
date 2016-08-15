@@ -37,13 +37,13 @@
         <profile>
             <id>linux</id>
             <properties>
-                <browser>src/test/resources/chromedriver</browser>
+                <chromedriver.path>src/test/resources/chromedriver</chromedriver.path>
             </properties>
         </profile>
         <profile>
             <id>win</id>
             <properties>
-                <browser>src\test\resources\chromedriver.exe</browser>
+                <chromedriver.path>src\test\resources\chromedriver.exe</chromedriver.path>
             </properties>
         </profile>
     </profiles>
