@@ -56,8 +56,8 @@
                 <version>2.19.1</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <webdriver.chrome.driver>${browser}</webdriver.chrome.driver>
-                        <selenide.browser>${chromedriver.path}</selenide.browser>
+                        <webdriver.chrome.driver>${chromedriver.path}</webdriver.chrome.driver>
+                        <selenide.browser>${browser}</selenide.browser>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
                         <suiteXmlFile>src\test\resources\testng.xml</suiteXmlFile>
