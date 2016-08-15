@@ -11,6 +11,7 @@
     <properties>
         <browser></browser>
         <locale></locale>
+        <chromedriver.path>src\test\resources\chromedriver.exe</chromedriver.path>
     </properties>
 
     <dependencies>
@@ -33,6 +34,12 @@
                 <browser>chrome</browser>
             </properties>
         </profile>
+        <profile>
+            <id>linux</id>
+            <properties>
+                <browser>src/test/resources/chromedriver</browser>
+            </properties>
+        </profile>
     </profiles>
 
     <build>
@@ -43,8 +50,8 @@
                 <version>2.19.1</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <webdriver.chrome.driver>src\test\resources\chromedriver.exe</webdriver.chrome.driver>
-                        <selenide.browser>${browser}</selenide.browser>
+                        <webdriver.chrome.driver>${browser}</webdriver.chrome.driver>
+                        <selenide.browser>${chromedriver.path}</selenide.browser>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
                         <suiteXmlFile>src\test\resources\testng.xml</suiteXmlFile>
